@@ -3,34 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unify - Past Meets Present</title>
+  <title>Unify - Reconnect Through Time</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Unify 🤍</h1>
-    <p>Upload your childhood and recent photos — see your past and present unite.</p>
+    <h1>Unify</h1>
+    <p>Upload your childhood and adult photos — AI will bring them together ❤️</p>
 
-    <div class="upload-section">
-      <div class="upload-box">
-        <label>Upload Childhood Photo</label>
-        <input type="file" id="childPhoto" accept="image/*">
-      </div>
-      <div class="upload-box">
-        <label>Upload Recent Photo</label>
-        <input type="file" id="adultPhoto" accept="image/*">
-      </div>
-    </div>
+    <input type="file" id="child" accept="image/*" />
+    <input type="file" id="adult" accept="image/*" />
+    <button id="generate">Generate Unified Image</button>
 
-    <button id="generateBtn">Generate Unified Image</button>
-    <div class="loading" id="loading">Processing... Please wait ⏳</div>
-
-    <div class="output" id="output"></div>
+    <div id="output"></div>
   </div>
-
-  <footer>
-    <p>Made with love by Akash </p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
